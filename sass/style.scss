@@ -1,0 +1,38 @@
+@import 'base/mixins';
+//mixins
+@import 'libs/font';
+@import 'libs/slick';
+@import 'libs/slick-theme';
+@import 'libs/animate';
+@import 'base/variables';
+* {
+    font-family: 'Gotham Pro';
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/marketing';
+@import 'blocks/course';
+@import 'blocks/information';
+@import 'blocks/study';
+@import 'blocks/tools';
+@import 'blocks/consultation';
+@import 'blocks/mailing';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+// media
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-y: hidden;
+    }
+}

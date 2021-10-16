@@ -1,0 +1,250 @@
+.tools {
+    // min-height: 699px;
+    background-color: #f2f2f2;
+    padding: 94px 0 79px 0;
+    &_title {
+        position: relative;
+        font-size: 35px;
+        z-index: 1;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: -.03em;
+        color: #171717;
+        margin-top: -15px;
+        p {
+            font-weight: 900;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 188px;
+            height: 188px;
+            left: -95px;
+            top: -79px;
+            background-color: #82b406;
+            z-index: -1;
+        }
+    }
+    &_subtitle {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #000000;
+        margin-top: 55px;
+    }
+    &_block {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 390px;
+        margin-top: 24px;
+    }
+    &_inner {
+        width: 84px;
+        height: 84px;
+        border-radius: 100%;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 14px;
+        &-1 {
+            background: url('../icons/tools/1.png') center no-repeat;
+        }
+        &-2 {
+            background: url('../icons/tools/2.png') center no-repeat;
+        }
+        &-3 {
+            background: url('../icons/tools/3.png') center no-repeat;
+        }
+        &-4 {
+            background: url('../icons/tools/4.png') center no-repeat;
+        }
+        &-5 {
+            background: url('../icons/tools/5.png') center no-repeat;
+        }
+        &-6 {
+            background: url('../icons/tools/6.png') center no-repeat;
+        }
+        &-7 {
+            background: url('../icons/tools/7.png') center no-repeat;
+        }
+        &-8 {
+            background: url('../icons/tools/8.png') center no-repeat;
+        }
+    }
+    &_wrapper {
+        display: flex;
+    }
+    &_item {
+        margin-right: 300px;
+        &:last-child {
+            margin-right: 0;
+            margin-top: -68px;
+        }
+    }
+    &_label {
+        margin-top: 51px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #000000;
+    }
+    &_descr {
+        width: 390px;
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #848383;
+    }
+    &_certificate_text {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: #000000;
+        margin-top: 27px;
+        line-height: 23px;
+        width: 200px;
+    }
+    &_link {
+        text-decoration: underline;
+        color: #0352b2;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tools {
+        padding-left: 15px;
+        padding-right: 15px;
+        &_title {
+            &:before {
+                left: -41px;
+            }
+        }
+        &_item {
+            margin-right: 255px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .tools {
+        &_wrapper {
+            justify-content: center;
+        }
+        &_item {
+            margin-right: 43px;
+            &:last-child {
+                margin-top: 60px;
+            }
+        }
+        &_title {
+            margin-top: -20px;
+            font-size: 29px;
+            &:before {
+                width: 165px;
+                height: 165px;
+                top: -74px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tools {
+        &_wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &_title {
+            margin-top: -35px;
+            &:before {
+                width: 150px;
+                height: 150px;
+                top: -59px;
+            }
+        }
+        &_item {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .tools {
+        &_title {
+            margin-top: -45px;
+            font-size: 19px;
+            &:before {
+                width: 106px;
+                height: 106px;
+                top: -49px;
+            }
+        }
+        &_subtitle {
+            font-size: 16px;
+        }
+        &_wrapper {
+            flex-direction: column;
+        }
+        &_inner {
+            width: 65px;
+            height: 65px;
+            &-1 {
+                background: url('../icons/tools-mob/1.png') center no-repeat;
+            }
+            &-2 {
+                background: url('../icons/tools-mob/2.png') center no-repeat;
+            }
+            &-3 {
+                background: url('../icons/tools-mob/3.png') center no-repeat;
+            }
+            &-4 {
+                background: url('../icons/tools-mob/4.png') center no-repeat;
+            }
+            &-5 {
+                background: url('../icons/tools-mob/5.png') center no-repeat;
+            }
+            &-6 {
+                background: url('../icons/tools-mob/6.png') center no-repeat;
+            }
+            &-7 {
+                background: url('../icons/tools-mob/7.png') center no-repeat;
+            }
+            &-8 {
+                background: url('../icons/tools-mob/8.png') center no-repeat;
+            }
+        }
+        &_block {
+            width: 290px;
+            margin: 0 auto;
+            margin-top: 15px;
+            // content: url(../icons/mob/1.png);
+        }
+        &_descr {
+            max-width: 300px;
+            width: 100%;
+            font-size: 13px;
+        }
+        &_label {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+        &_certificate {
+            width: 290px;
+            height: 413px;
+            margin: 0 auto;
+            img {
+                max-width: 100%;
+            }
+        }
+        &_certificate_text {
+            width: 190px;
+            margin: 0 auto;
+            margin-top: 21px;
+        }
+    }
+}

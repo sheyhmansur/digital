@@ -1,0 +1,12 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    img {
+        width: 100%;
+    }
+}

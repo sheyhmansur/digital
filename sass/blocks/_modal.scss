@@ -1,0 +1,126 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    min-height: 380px;
+    background-color: #f2f2f2;
+    transform: translate(-50%, -50%);
+    padding: 38px 40px 40px 40px;
+    border-radius: 4px;
+    .button_submit {
+        width: 308px;
+        height: 57px;
+        color: #ffffff;
+        background-color: $main-color;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: 0;
+        border-radius: 4px;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+        margin-top: 18px;
+        outline: none;
+        cursor: pointer;
+    }
+    input {
+        display: block;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 15px;
+        font-size: 17px;
+        width: 220px;
+        height: 57px;
+        border: 1px solid $main-color;
+        padding: 0 42px;
+        outline: 0 !important;
+    }
+    &_close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        line-height: 21px;
+        font-size: 41px;
+        color: $main-color;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    &_subtitle {
+        font-size: 23px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    &_descr {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    &_text {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 20px;
+        p {
+            font-size: 19px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 5px;
+        }
+    }
+    &_mini {
+        min-height: 90px;
+    }
+    .error {
+        display: block;
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+#thanks,
+#consultation {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .modal {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 41px;
+        width: 233px;
+        input {
+            width: 148px;
+        }
+        .button_submit {
+            width: 235px;
+        }
+        &_subtitle {
+            font-size: 21px;
+        }
+        &_descr {
+            letter-spacing: 1px;
+        }
+        &_close {
+            top: auto;
+            bottom: -45px;
+            left: 47%;
+        }
+    }
+}

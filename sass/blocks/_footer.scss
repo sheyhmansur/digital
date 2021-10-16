@@ -1,0 +1,269 @@
+.contacts {
+  padding: 38px 0 53px 0;
+  background-color: #20252e;
+  &_menu {
+    display: flex;
+    align-items: center;
+  }
+  &_item {
+    font-size: 16px;
+    font-weight: 400;
+    color: $main-color;
+    padding-right: 39px;
+    text-decoration: none;
+  }
+  &_img {
+    margin-right: 88px;
+  }
+  &_feedback {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 44px;
+    a {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  &_phone {
+    padding-right: 15px;
+  }
+  &_mail {
+    padding-left: 45px;
+    padding-right: 15px;
+  }
+  &_social {
+    display: flex;
+    margin-left: 51px;
+    a {
+      padding-right: 16px;
+    }
+  }
+  &_wrapper {
+    margin-top: 55px;
+    display: flex;
+  }
+  &_block {
+    margin-right: 76px;
+    span {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #848383;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    input {
+      width: 225px;
+      height: 35px;
+      border: none;
+      background-color: #20252e;
+      border-bottom: 2px solid #ffffff;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+  }
+  &_descr {
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #848383;
+    padding-bottom: 8px;
+    width: 241px;
+  }
+  .contacts_checkbox {
+    width: 12px;
+    height: 12px;
+    margin-top: 16px;
+  }
+  &_text {
+    position: absolute;
+    left: 24px;
+    bottom: 65px;
+    width: 186px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  button {
+    margin-top: 28px;
+    width: 154px;
+    height: 52px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #fafffd;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 10px 0px #82b406;
+    position: relative;
+    overflow: hidden;
+    @include btn-hover;
+  }
+  &_name {
+    color: #ffffff;
+  }
+}
+
+.contacts_checkbox-label {
+  width: 186px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
+  color: #ffffff;
+}
+
+.contacts_label::before {
+  height: 13px;
+  width: 13px;
+  border: 1px solid;
+  left: 0px;
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+  top: 3px;
+  background-color: #82b406;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+    &_item {
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contacts {
+    &_menu {
+      justify-content: center;
+    }
+    &_img {
+      margin-right: 0;
+      width: 85%;
+    }
+    &_item {
+      padding-right: 13px;
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+    }
+    &_wrapper {
+      justify-content: center;
+    }
+    &_block {
+      &:last-child {
+        display: none;
+      }
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+    &_feedback {
+      margin-left: 0;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    &_menu {
+      position: relative;
+      flex-wrap: wrap;
+      margin-top: 45px;
+    }
+    &_img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -60px;
+      width: 25%;
+    }
+    &_wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &_feedback {
+      margin-top: 25px;
+    }
+    &_block {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    // button {
+    //     width: 233px;
+    // }
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    &_feedback {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: -200px;
+    }
+    &_img {
+      width: 143px;
+      height: 37px;
+      top: -50px;
+    }
+    &_menu {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+    &_social {
+      align-items: center;
+    }
+    a {
+      font-size: 12px;
+    }
+    li {
+      line-height: 33px;
+    }
+    &_wrapper {
+      margin-top: 150px;
+    }
+    &_phone {
+      padding-right: 0;
+    }
+    &_block {
+      &:nth-child(2) {
+        display: none;
+      }
+      img {
+        width: 290px;
+        height: 214px;
+      }
+    }
+    a {
+      margin-bottom: 21px;
+    }
+  }
+}
