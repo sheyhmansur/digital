@@ -9,4 +9,4 @@
 - ## Инструменты 
 - Gulp, SCSS
 
-  https://sheyhmansur.github.io/digital
+[<h3> DEMO </h3>](https://sheyhmansur.github.io/digital)
