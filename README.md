@@ -9,4 +9,4 @@
 - ## Инструменты 
 - Gulp, SCSS
 
-  ###[Посмотреть сайт](https://sheyhmansur.github.io/digital)
+  https://sheyhmansur.github.io/digital
