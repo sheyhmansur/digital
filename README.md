@@ -9,4 +9,4 @@
 - ## Инструменты 
 - Gulp, SCSS
 
-https://hexlet.io 
+  [Это ссылка на Хекслет](https://hexlet.io)
